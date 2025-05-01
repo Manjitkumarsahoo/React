@@ -1,0 +1,89 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        //Call By value
+
+        // let a = 10;
+        // let b = a;
+        // a = 30;
+        // console.log(a);
+        // console.log(b);
+
+        //Call By reference
+
+        let obj = {}
+
+        //Shallow Copy (create a new memory for outer but inner object keep same old reference)  change inner
+
+        let arr1 = [1, 2, 3, [4, 5]]
+        let arr2 = [...arr1]               //Shallow
+
+        //let arr3 = arr1.slice()          //Shallow
+        //let arr4 = arr1.filter(ele => true)
+
+        arr1[0] = 100
+        console.log(arr1);
+        console.log(arr2);
+
+        arr1[3][1] = 500
+        console.log(arr1)                   //[100,2,3,[4,500]]
+        console.log(arr2)                   //[100,2,3,[4,500]]
+        console.log(arr1 === arr2)          //false
+        console.log(arr1[3] === arr2[3])    //true
+
+        arr[3] = 'abcd'
+        console.log(arr1);                  //[100,2,3,'abcd']
+        console.log(arr2);                  //[100,2,3,[4,500]]
+
+
+        //Deep Copy (create a new reference for outer layer as well as innerlayer) can not change inner
+
+        let array1 = [1, 2, [3, 4, [5]]]
+
+        let array2 = JSON.parse(JSON.stringify(array1))
+
+        console.log(array1 == array2);                    //false
+        console.log(array1[2] == array2[2]);              //false
+
+        array1[2][0] = 3000
+        console.log(array1);                              //[1, 2, [3000, 4, [5]]]
+        console.log(array2);                              //[1, 2, [3, 4, [5]]]
+        
+
+    </script>
+</body>
+
+</html> -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        function main() {
+            let n = 1010;
+            let deciml = 0
+            let last = n % 10
+            for (let i = 0; i <= n.length; i++) {
+                num = last + Math.pow(2, i)
+                deciml += num;
+            }
+            return decimal;
+        }
+    </script>
+</body>
+
+</html>

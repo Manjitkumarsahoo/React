@@ -1,0 +1,77 @@
+.hero {
+    background-size: cover, cover, contain;
+    background-position: center, center, top right;
+    background-repeat: no-repeat, no-repeat, no-repeat;
+    color: white;
+    padding: 4rem 2rem;
+    font-family: sans-serif;
+    height: 70vh;
+    background-image:
+        linear-gradient(to bottom right, rgba(15, 12, 41, 0.85), rgba(48, 43, 99, 0.85), rgba(36, 36, 62, 0.85)),
+        url('../assets/bg2.svg'),
+        url('../assets/bg1.svg');
+
+}
+
+.hero-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: auto;
+    gap: 2rem;
+}
+
+.hero-text {
+    flex: 1;
+    min-width: 300px;
+}
+
+.hero-text h1 {
+    font-size: 2.5rem;
+    line-height: 1.3;
+    margin-bottom: 1rem;
+}
+
+.hero-text span {
+    color: #b266ff;
+}
+
+.hero-text p {
+    font-size: 1.1rem;
+    margin-bottom: 1.5rem;
+    max-width: 500px;
+}
+
+.hero-text button {
+    background: linear-gradient(to right, #8a2be2, #6a5acd);
+    border: none;
+    color: white;
+    padding: 0.75rem 1.5rem;
+    font-size: 1rem;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.hero-images {
+    flex: 1;
+    position: relative;
+    min-width: 300px;
+}
+
+.img1 {
+    border-radius: 20px 0 0 20px;
+    width: 220px;
+    position: relative;
+    z-index: 2;
+}
+
+.img2 {
+    position: absolute;
+    top: 30px;
+    left: 130px;
+    border-radius: 0 20px 20px 0;
+    width: 220px;
+    z-index: 1;
+}

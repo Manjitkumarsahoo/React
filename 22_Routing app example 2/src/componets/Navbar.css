@@ -1,0 +1,57 @@
+/* Navbar Container */
+.navbar {
+    background-color: #f7a25c; /* Bootstrap primary blue */
+    padding: 1rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Navbar Content */
+  .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1100px;
+    margin: 0 auto;
+  }
+  
+  /* Logo Styling */
+  .logo {
+    color: white;
+    font-size: 1.8rem;
+    font-weight: bold;
+  }
+  
+  /* Navigation Links */
+  .nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+  }
+  
+  .nav-link {
+    color: white;
+    text-decoration: none;
+    font-size: 1rem;
+    transition: color 0.3s ease-in-out;
+  }
+  
+  .nav-link:hover {
+    color: #d1d1d1; /* Light gray on hover */
+  }
+  
+  /* Login Button */
+  .login-btn {
+    background-color: white;
+    color: #007bff;
+    padding: 5px 12px;
+    border-radius: 5px;
+    font-weight: bold;
+  }
+  
+  .login-btn:hover {
+    background-color: #0056b3;
+    color: white;
+  }
+  .nav-link.active{
+    color: rgb(129, 17, 198);
+  }
