@@ -1,0 +1,189 @@
+.about-us-section {
+  padding: 2rem 2rem;
+  font-family: 'Inter';
+  background-color: rgba(255, 255, 255, 0.93); 
+  background-image: url("/assets/Gridlayers .svg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-blend-mode: lighten; 
+  font-family: 'Inter';
+  text-align: center;
+}
+
+.about-button {
+  background-color:rgb(244, 243, 243);
+  color: #4a4848; /* black text */
+  border-radius: 4rem; 
+  padding: 0.2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width:120px;
+  height:30px;
+  margin: 1.5rem auto -1rem auto;
+  font-family: 'Inter';
+}
+
+.about-us-title {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #1a1a33;
+  margin-bottom: 2rem;
+
+}
+
+.about-us-card {
+  max-width: 900px;
+  margin: 1rem auto;
+  background: #f3f4f4;
+  border-radius: 50px;
+  display: flex;
+  justify-content: space-between;
+  padding: 3rem;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+  text-align: left;
+  gap: 2rem;
+}
+
+.about-us-text {
+  flex: 1;
+ 
+}
+
+.about-us-text p {
+  color: #0e0e0e;
+  margin-bottom: 1rem;
+  font-size: 1rem;
+  line-height: 1.5;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.contact-btn {
+  padding: 0.5rem 1rem;
+  background: linear-gradient(to bottom, #4ea3e3, #1e57a4);
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-size: 0.85rem;
+  cursor: pointer;
+  margin-top: 1rem;
+  transition: transform 0.3s ease;
+  text-decoration: none;
+}
+
+.contact-btn:hover {
+  transform: translateY(-2px);
+}
+
+.about-us-image-placeholder {
+  flex: 1;
+  width: 50%; /* Adjust the width as needed */
+  background: url("/assets/about.jpg");
+  background-size: cover;         
+  background-position: center;     /* Keeps the image centered */
+  background-repeat: no-repeat;    /* Prevents repeating */
+  border-radius: 50px;
+  min-height: 300px;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+}
+
+
+
+/* Responsive Design */
+@media screen and (max-width: 1024px) {
+  .about-us-card {
+    padding: 3rem;
+    gap: 1.5rem;
+  }
+
+  .about-us-title {
+    font-size: 1.8rem;
+  }
+
+  .about-us-text p {
+    font-size: 0.95rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .about-us-section {
+    padding: 2rem 1.5rem;
+  }
+
+  .about-us-card {
+    flex-direction: column;
+    padding: 2rem;
+    gap: 2rem;
+  }
+
+  .about-us-title {
+    font-size: 1.6rem;
+  }
+
+  .about-us-text {
+    order: 2;
+  }
+
+  .about-us-image-placeholder {
+    order: 1;
+    min-height: 250px;
+  }
+
+  .about-button {
+    width: 100px;
+    height: 28px;
+    font-size: 0.9rem;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .about-us-section {
+    padding: 1.5rem 1rem;
+  }
+
+  .about-us-card {
+    padding: 1.5rem;
+    margin: 2rem auto;
+  }
+
+  .about-us-title {
+    font-size: 1.4rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .about-us-text p {
+    font-size: 0.9rem;
+    line-height: 1.4;
+    font-family:sans-serif;
+  }
+
+  .about-us-image-placeholder {
+    min-height: 200px;
+  }
+
+  .contact-btn {
+    padding: 0.4rem 0.8rem;
+    font-size: 0.8rem;
+  }
+
+  .about-button {
+    width: 90px;
+    height: 26px;
+    font-size: 0.8rem;
+  }
+  .about-us-image-placeholder {
+    flex: 1;
+    width: 100%; /* Adjust the width as needed */
+    background: url("/assets/about.jpg");
+    background-size: cover;         
+    background-position: center;     /* Keeps the image centered */
+    background-repeat: no-repeat;    /* Prevents repeating */
+    border-radius: 30px;
+  
+    min-height: 150px;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+  }
+}
+

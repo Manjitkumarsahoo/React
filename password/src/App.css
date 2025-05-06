@@ -1,0 +1,53 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .container {
+    max-width: 400px;
+    margin: 80px auto;
+    padding: 30px;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  }
+  
+  h2 {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .password-input {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  .rules-list {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .rule {
+    margin-bottom: 8px;
+    color: #333;
+  }
+  
+  .rule.valid {
+    color: green;
+    font-weight: bold;
+  }
+  
+  .success {
+    margin-top: 20px;
+    color: green;
+    text-align: center;
+    font-weight: bold;
+  }
+  
